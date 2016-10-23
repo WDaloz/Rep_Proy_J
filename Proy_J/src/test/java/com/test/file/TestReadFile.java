@@ -29,7 +29,7 @@ public class TestReadFile
 	}
 
 	@Test
-//	@Ignore
+	@Ignore
 	public void testReadTextFileA()
 	{
 		text = inputFileReader.readTextFileA("d://textoA.txt");
@@ -46,5 +46,16 @@ public class TestReadFile
 		Assert.assertNotNull(text);
 
 	}
+	
+	@Test
+//	@Ignore
+	public void testReadTextFileC()
+	{
+		text = inputFileReader.readTextFileC("d://textoC.txt");
+
+		Assert.assertNotNull(text);
+
+	}
+
 
 }

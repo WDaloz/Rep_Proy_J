@@ -34,10 +34,13 @@ public class ExerciseStringA
 
 	public String sortVowels(String string)
 	{
-		
+		//Convertir la cadena (String) en un arreglo de char.
 		char[] vowels = string.toCharArray();
+		
+		//Ordenamos el arreglo
 		Arrays.sort(vowels);
 		
+		//Convertimos el arreglo de char a cadena.
 		return String.valueOf(vowels);
 	}
 
